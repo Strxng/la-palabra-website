@@ -16,17 +16,12 @@ const features = [
     description:
       "Mantén tu secuencia de lectura, celebra cada día completado y convierte la constancia en parte de tu fe.",
   },
-  {
-    title: "Grupos privados",
-    description:
-      "Lee junto a tu comunidad, comparte avances y acompaña a otros en un espacio seguro y acogedor.",
-  },
 ];
 
 const steps = [
-  "Escoge un plan de lectura o empieza por el versículo del día.",
+  "Empieza por el versículo del día.",
   "Lee, guarda tus pasajes favoritos y pide una explicación cuando necesites más claridad.",
-  "Comparte reflexiones, pedidos de oración y progreso con tu grupo privado.",
+  "Reflexiones, pedidos de oración y progreso.",
 ];
 
 export default function Home() {
@@ -51,7 +46,7 @@ export default function Home() {
           <nav className="hidden items-center gap-8 text-sm font-semibold text-[#023464]/75 md:flex">
             <a href="#recursos">Recursos</a>
             <a href="#como-funciona">Cómo funciona</a>
-            <a href="#comunidad">Comunidad</a>
+            <a href="#oracion">Oración</a>
           </nav>
           <a className="nav-cta" href="#descargar">
             Descargar
@@ -61,7 +56,7 @@ export default function Home() {
         <div className="mx-auto grid w-full max-w-7xl items-center gap-10 pt-24 lg:grid-cols-[minmax(0,0.95fr)_minmax(360px,0.75fr)]">
           <div id="inicio" className="relative z-10 max-w-3xl">
             <p className="mb-5 text-sm font-extrabold uppercase tracking-[0.22em] text-[#048ba8]">
-              Biblia con explicaciones, daily streak y grupos de lectura
+              Biblia con explicaciones, daily streak y pedidos de oración
             </p>
             <h1 className="font-serif text-[clamp(3rem,7vw,7.4rem)] leading-[0.92] text-[#023464]">
               La Palabra que transforma tu día.
@@ -98,10 +93,10 @@ export default function Home() {
               </div>
               <div>
                 <strong className="block font-serif text-3xl text-[#023464]">
-                  Grupos
+                  Oración
                 </strong>
                 <span className="text-sm font-semibold text-[#5f6c7a]">
-                  para leer en comunión
+                  para presentar pedidos
                 </span>
               </div>
             </div>
@@ -133,7 +128,7 @@ export default function Home() {
               </h2>
             </div>
             <p className="max-w-2xl text-lg leading-8 text-[#536477]">
-              La Palabra une lectura bíblica, explicación y comunidad en una
+              La Palabra une lectura bíblica, explicación y constancia en una
               experiencia tranquila. La tecnología ayuda, pero el centro sigue
               siendo la Palabra.
             </p>
@@ -175,16 +170,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-6 py-20 sm:px-10 lg:px-16" id="comunidad">
+      <section className="px-6 py-20 sm:px-10 lg:px-16" id="oracion">
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1fr_0.85fr] lg:items-center">
           <div className="community-panel">
             <div className="mini-card bg-[#023464] text-white">
               <span>Pedido de oración</span>
               <strong>Por paz y propósito para esta semana.</strong>
-            </div>
-            <div className="mini-card bg-[#f18f01] text-white">
-              <span>Grupo familiar</span>
-              <strong>7 días leyendo el Evangelio de Lucas.</strong>
             </div>
             <div className="mini-card bg-[#eaf6f7] text-[#023464]">
               <span>Daily streak</span>
@@ -192,14 +183,14 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <p className="section-kicker">Comunión y crecimiento</p>
+            <p className="section-kicker">Oración y constancia</p>
             <h2 className="section-title">
-              Más que una Biblia digital, un hábito compartido.
+              Más que una Biblia digital, un hábito de fe.
             </h2>
             <p className="mt-6 text-lg leading-8 text-[#536477]">
-              Crea grupos privados de lectura, acompaña pedidos de oración y
-              celebra el progreso espiritual con una interfaz limpia, segura y
-              acogedora para personas de cualquier nivel de conocimiento.
+              Acompaña pedidos de oración y celebra tu progreso espiritual con
+              una interfaz limpia, segura y acogedora para personas de cualquier
+              nivel de conocimiento.
             </p>
           </div>
         </div>
@@ -216,7 +207,7 @@ export default function Home() {
                 Lleva la Palabra de Dios a tu ritmo diario.
               </h2>
               <p className="mt-5 max-w-2xl text-lg leading-8 text-white/75">
-                Una experiencia en español para leer, comprender y compartir la
+                Una experiencia en español para leer, comprender y vivir la
                 Biblia con más claridad.
               </p>
             </div>
