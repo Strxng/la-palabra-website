@@ -106,7 +106,7 @@ export default function Home() {
             <div className="phone-glow" aria-hidden="true" />
             <div className="phone-frame">
               <Image
-                src="/app-home.png"
+                src="/app-home.webp"
                 alt="Pantalla principal de la aplicación La Palabra"
                 width={720}
                 height={1600}
