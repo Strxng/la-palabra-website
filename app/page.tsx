@@ -7,9 +7,9 @@ const features = [
       "Lectura clara, navegación simple y una experiencia pensada para volver a la Palabra todos los días.",
   },
   {
-    title: "Explicaciones con IA",
+    title: "Versículo del día",
     description:
-      "Comprende pasajes difíciles con respuestas accesibles, guiadas por el contexto y orientadas al estudio.",
+      "Encuentra una lectura diaria para reflexionar, guardar y llevar contigo durante el día.",
   },
   {
     title: "Daily streak",
@@ -20,7 +20,7 @@ const features = [
 
 const steps = [
   "Empieza por el versículo del día.",
-  "Lee, guarda tus pasajes favoritos y pide una explicación cuando necesites más claridad.",
+  "Lee, guarda tus pasajes favoritos y vuelve a ellos cuando necesites recordar la Palabra.",
   "Reflexiones, pedidos de oración y progreso.",
 ];
 
@@ -56,7 +56,7 @@ export default function Home() {
         <div className="mx-auto grid w-full max-w-7xl items-center gap-10 pt-24 lg:grid-cols-[minmax(0,0.95fr)_minmax(360px,0.75fr)]">
           <div id="inicio" className="relative z-10 max-w-3xl">
             <p className="mb-5 text-sm font-extrabold uppercase tracking-[0.22em] text-[#048ba8]">
-              Biblia con explicaciones, daily streak y pedidos de oración
+              Biblia, versículo del día, daily streak y pedidos de oración
             </p>
             <h1 className="font-serif text-[clamp(3rem,7vw,7.4rem)] leading-[0.92] text-[#023464]">
               La Palabra que transforma tu día.
@@ -85,10 +85,10 @@ export default function Home() {
               </div>
               <div>
                 <strong className="block font-serif text-3xl text-[#023464]">
-                  IA
+                  Día
                 </strong>
                 <span className="text-sm font-semibold text-[#5f6c7a]">
-                  como apoyo al entendimiento
+                  para volver a la Palabra
                 </span>
               </div>
               <div>
@@ -128,8 +128,8 @@ export default function Home() {
               </h2>
             </div>
             <p className="max-w-2xl text-lg leading-8 text-[#536477]">
-              La Palabra une lectura bíblica, explicación y constancia en una
-              experiencia tranquila. La tecnología ayuda, pero el centro sigue
+              La Palabra une lectura bíblica, oración y constancia en una
+              experiencia tranquila. El diseño acompaña, pero el centro sigue
               siendo la Palabra.
             </p>
           </div>

@@ -65,9 +65,9 @@ const domine = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "La Palabra | Biblia con explicaciones y daily streak",
+  title: "La Palabra | Biblia, versículo del día y daily streak",
   description:
-    "La Palabra es una Biblia en español con explicaciones de versículos con IA, daily streak y pedidos de oración.",
+    "La Palabra es una Biblia en español con versículo del día, daily streak, favoritos y pedidos de oración.",
 };
 
 export default function RootLayout({
