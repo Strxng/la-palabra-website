@@ -1,7 +1,4 @@
-export type LegalSection = {
-  title: string;
-  body: string[];
-};
+import { currentLegalVersion, type LegalSection } from "../legal-content";
 
 export type TermsVersion = {
   version: string;
@@ -14,7 +11,7 @@ export type TermsVersion = {
 
 export const termsVersions: TermsVersion[] = [
   {
-    version: "2026-08-10",
+    version: currentLegalVersion,
     effectiveDate: "10 de agosto de 2026",
     updatedLabel: "Última actualización: 10 de agosto de 2026",
     title: "Términos de Uso de La Palabra",

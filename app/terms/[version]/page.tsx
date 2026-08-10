@@ -28,7 +28,7 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${terms.title} | ${terms.effectiveDate}`,
+    title: `${terms.title} | Versión ${terms.version}`,
     description: `Versión ${terms.version} de los Términos de Uso de La Palabra.`,
   };
 }
