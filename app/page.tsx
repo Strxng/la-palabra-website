@@ -212,11 +212,11 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
-              <a className="store-button" href="#" aria-label="Descargar en App Store">
+              <a className="store-button" href="https://apps.apple.com/br/app/la-palabra/id6789340172" aria-label="Descargar en App Store">
                 <span>Descargar en</span>
                 <strong>App Store</strong>
               </a>
-              <a className="store-button" href="#" aria-label="Disponible en Google Play">
+              <a className="store-button" href="https://play.google.com/store/apps/details?id=com.bazanapps.lapalabra" aria-label="Disponible en Google Play">
                 <span>Disponible en</span>
                 <strong>Google Play</strong>
               </a>
