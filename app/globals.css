@@ -1,8 +1,31 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fbfaf7;
-  --foreground: #023464;
+  --color-splash: #fdfbf9;
+  --color-background: #f0f4f7;
+  --color-backdrop: #e9edf0;
+  --color-surface: #ffffff;
+  --color-surface-variant: #f2eee9;
+  --color-border: #ced5d7;
+  --color-primary: #023464;
+  --color-secondary: #2f2d2e;
+  --color-tertiary: #048ba8;
+  --color-quaternary: #f18f01;
+  --color-quinary: #7dba3d;
+  --color-shadow: rgba(0, 0, 0, 0.5);
+  --color-overlay: rgba(0, 0, 0, 0.3);
+  --color-text-link: #2e66de;
+  --color-text-primary: #00203e;
+  --color-text-secondary: #023464;
+  --color-text-tertiary: #5d6675;
+  --color-text-on-primary: #e6e7ea;
+  --color-text-error: #ff0000;
+  --color-text-inverse: #f5f7fa;
+  --tag-primary: #c9f5ff;
+  --tag-secondary: #ffeaca;
+  --tag-tertiary: #e9ffd1;
+  --background: var(--color-background);
+  --foreground: var(--color-text-primary);
 }
 
 @theme inline {
@@ -30,9 +53,20 @@ a:hover {
   transform: translateY(-1px);
 }
 
+.hero-background {
+  background:
+    radial-gradient(circle at 20% 18%, rgba(201, 245, 255, 0.86), transparent 30%),
+    radial-gradient(circle at 82% 16%, rgba(255, 234, 202, 0.8), transparent 28%),
+    linear-gradient(135deg, var(--color-splash) 0%, var(--color-background) 48%, var(--color-backdrop) 100%);
+}
+
+.hero-fade {
+  background: linear-gradient(180deg, rgba(240, 244, 247, 0), var(--color-background));
+}
+
 .brand-lockup {
   align-items: center;
-  color: #023464;
+  color: var(--color-primary);
   display: inline-flex;
   font-family: var(--font-domine), Georgia, serif;
   font-size: clamp(1.8rem, 4vw, 3.2rem);
@@ -62,9 +96,9 @@ a:hover {
 }
 
 .nav-cta {
-  border: 1px solid rgba(2, 52, 100, 0.2);
+  border: 1px solid var(--color-border);
   border-radius: 999px;
-  color: #023464;
+  color: var(--color-primary);
   font-size: 0.9rem;
   font-weight: 800;
   padding: 0.85rem 1.25rem;
@@ -72,26 +106,26 @@ a:hover {
 
 .nav-cta:hover,
 .secondary-cta:hover {
-  border-color: rgba(4, 139, 168, 0.55);
-  color: #048ba8;
+  border-color: var(--color-tertiary);
+  color: var(--color-tertiary);
 }
 
 .primary-cta {
-  background: #023464;
+  background: var(--color-primary);
   border-radius: 999px;
-  color: #ffffff;
+  color: var(--color-text-on-primary);
   font-weight: 900;
   padding: 0.95rem 1.45rem;
 }
 
 .primary-cta:hover {
-  background: #048ba8;
+  background: var(--color-tertiary);
 }
 
 .secondary-cta {
-  border: 1px solid rgba(2, 52, 100, 0.24);
+  border: 1px solid var(--color-border);
   border-radius: 999px;
-  color: #023464;
+  color: var(--color-primary);
   font-weight: 900;
   padding: 0.95rem 1.45rem;
 }
@@ -102,8 +136,8 @@ a:hover {
 
 .phone-glow {
   background:
-    linear-gradient(135deg, rgba(4, 139, 168, 0.26), rgba(241, 143, 1, 0.25)),
-    #ffffff;
+    linear-gradient(135deg, rgba(4, 139, 168, 0.28), rgba(241, 143, 1, 0.24), rgba(125, 186, 61, 0.2)),
+    var(--color-surface);
   border-radius: 46% 54% 48% 52%;
   filter: blur(2px);
   inset: 6% -12% 3% -12%;
@@ -111,18 +145,18 @@ a:hover {
 }
 
 .phone-frame {
-  background: #ffffff;
-  border: 10px solid #ffffff;
+  background: var(--color-surface);
+  border: 10px solid var(--color-surface);
   border-radius: 2.25rem;
   box-shadow:
-    0 32px 80px rgba(2, 52, 100, 0.2),
+    0 32px 80px rgba(2, 52, 100, 0.18),
     0 8px 22px rgba(47, 45, 46, 0.12);
   overflow: hidden;
   position: relative;
 }
 
 .section-kicker {
-  color: #048ba8;
+  color: var(--color-tertiary);
   font-size: 0.78rem;
   font-weight: 900;
   letter-spacing: 0.22em;
@@ -130,7 +164,7 @@ a:hover {
 }
 
 .section-title {
-  color: #023464;
+  color: var(--color-primary);
   font-family: var(--font-domine), Georgia, serif;
   font-size: clamp(2.4rem, 5vw, 4.8rem);
   font-weight: 800;
@@ -141,27 +175,27 @@ a:hover {
 }
 
 .feature-card {
-  background: #ffffff;
-  border: 1px solid rgba(2, 52, 100, 0.12);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
   border-radius: 0.5rem;
   min-height: 18rem;
   padding: 1.5rem;
 }
 
 .feature-card:nth-child(2) {
-  background: #eaf6f7;
+  background: var(--tag-primary);
 }
 
 .feature-card:nth-child(3) {
-  background: #fff7e9;
+  background: var(--tag-secondary);
 }
 
 .feature-card:nth-child(4) {
-  background: #f3f8ea;
+  background: var(--tag-tertiary);
 }
 
 .feature-number {
-  color: #048ba8;
+  color: var(--color-tertiary);
   display: block;
   font-size: 0.78rem;
   font-weight: 900;
@@ -170,7 +204,7 @@ a:hover {
 }
 
 .feature-card h3 {
-  color: #023464;
+  color: var(--color-primary);
   font-family: var(--font-domine), Georgia, serif;
   font-size: 2rem;
   font-weight: 800;
@@ -178,15 +212,15 @@ a:hover {
 }
 
 .feature-card p {
-  color: #536477;
+  color: var(--color-text-tertiary);
   line-height: 1.7;
   margin-top: 1rem;
 }
 
 .step-row {
   align-items: center;
-  background: #fbfaf7;
-  border: 1px solid rgba(2, 52, 100, 0.1);
+  background: var(--color-background);
+  border: 1px solid var(--color-border);
   border-radius: 0.5rem;
   display: grid;
   gap: 1.2rem;
@@ -196,9 +230,9 @@ a:hover {
 
 .step-row span {
   align-items: center;
-  background: #023464;
+  background: var(--color-primary);
   border-radius: 999px;
-  color: #ffffff;
+  color: var(--color-text-on-primary);
   display: inline-flex;
   font-family: var(--font-domine), Georgia, serif;
   font-size: 1.3rem;
@@ -209,7 +243,7 @@ a:hover {
 }
 
 .step-row p {
-  color: #2f475f;
+  color: var(--color-text-primary);
   font-size: 1.08rem;
   font-weight: 750;
   line-height: 1.55;
@@ -221,8 +255,19 @@ a:hover {
 }
 
 .mini-card {
-  border-radius: 0.75rem;
+  border-radius: 0.5rem;
   padding: clamp(1.3rem, 4vw, 2rem);
+}
+
+.mini-card-primary {
+  background: var(--color-primary);
+  color: var(--color-text-on-primary);
+}
+
+.mini-card-checklist {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  color: var(--color-primary);
 }
 
 .mini-card span {
@@ -242,10 +287,61 @@ a:hover {
   line-height: 1.08;
 }
 
-.store-button {
-  background: #ffffff;
+.mini-card ul {
+  display: grid;
+  gap: 0.85rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mini-card li {
+  align-items: center;
+  color: var(--color-text-primary);
+  display: grid;
+  font-size: clamp(1.25rem, 3vw, 1.9rem);
+  font-weight: 900;
+  gap: 0.85rem;
+  grid-template-columns: auto 1fr;
+  line-height: 1.2;
+  position: relative;
+}
+
+.mini-card li::before {
+  background: var(--color-quinary);
   border-radius: 999px;
-  color: #023464;
+  content: "";
+  display: inline-flex;
+  height: 1.55rem;
+  width: 1.55rem;
+}
+
+.mini-card li::after {
+  border-bottom: 2px solid var(--color-surface);
+  border-right: 2px solid var(--color-surface);
+  content: "";
+  height: 0.62rem;
+  left: 0.55rem;
+  position: absolute;
+  top: 0.34rem;
+  transform: rotate(40deg);
+  width: 0.34rem;
+}
+
+.download-panel {
+  background: var(--color-primary);
+  border-radius: 0.5rem;
+  color: var(--color-text-inverse);
+}
+
+.download-copy {
+  color: rgba(245, 247, 250, 0.8);
+}
+
+.store-button {
+  background: var(--color-surface);
+  border-radius: 999px;
+  color: var(--color-primary);
   flex-direction: column;
   min-width: 12rem;
   padding: 0.85rem 1.25rem;
@@ -266,8 +362,8 @@ a:hover {
 .legal-page,
 .privacy-page {
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(234, 246, 247, 0.55)),
-    #fbfaf7;
+    linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(201, 245, 255, 0.42)),
+    var(--color-background);
 }
 
 .legal-header,
@@ -286,7 +382,7 @@ a:hover {
 
 .legal-document h1,
 .privacy-document h1 {
-  color: #023464;
+  color: var(--color-primary);
   font-family: var(--font-domine), Georgia, serif;
   font-size: clamp(2.8rem, 7vw, 5.5rem);
   font-weight: 700;
@@ -297,7 +393,7 @@ a:hover {
 
 .legal-updated,
 .privacy-updated {
-  color: #536477;
+  color: var(--color-text-tertiary);
   font-size: 1rem;
   font-weight: 800;
   margin-top: 1.25rem;
@@ -305,8 +401,8 @@ a:hover {
 
 .legal-intro,
 .privacy-intro {
-  border-bottom: 1px solid rgba(2, 52, 100, 0.12);
-  border-top: 1px solid rgba(2, 52, 100, 0.12);
+  border-bottom: 1px solid var(--color-border);
+  border-top: 1px solid var(--color-border);
   display: grid;
   gap: 1rem;
   margin-top: 3rem;
@@ -317,7 +413,7 @@ a:hover {
 .legal-sections p,
 .privacy-intro p,
 .privacy-sections p {
-  color: #2f475f;
+  color: var(--color-text-primary);
   font-size: 1.08rem;
   line-height: 1.8;
 }
@@ -336,7 +432,7 @@ a:hover {
 
 .legal-sections h2,
 .privacy-sections h2 {
-  color: #023464;
+  color: var(--color-primary);
   font-family: var(--font-domine), Georgia, serif;
   font-size: clamp(1.65rem, 3vw, 2.25rem);
   font-weight: 700;

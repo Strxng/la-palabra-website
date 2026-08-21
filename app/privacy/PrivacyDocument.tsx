@@ -8,7 +8,7 @@ type PrivacyDocumentProps = {
 
 export function PrivacyDocument({ privacy }: PrivacyDocumentProps) {
   return (
-    <main className="privacy-page min-h-screen bg-[#fbfaf7] text-[#023464]">
+    <main className="privacy-page min-h-screen bg-[var(--color-background)] text-[var(--color-primary)]">
       <header className="privacy-header">
         <Link className="brand-lockup" href="/" aria-label="La Palabra">
           <Image

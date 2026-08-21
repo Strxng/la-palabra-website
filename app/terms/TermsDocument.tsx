@@ -8,7 +8,7 @@ type TermsDocumentProps = {
 
 export function TermsDocument({ terms }: TermsDocumentProps) {
   return (
-    <main className="legal-page min-h-screen bg-[#fbfaf7] text-[#023464]">
+    <main className="legal-page min-h-screen bg-[var(--color-background)] text-[var(--color-primary)]">
       <header className="legal-header">
         <Link className="brand-lockup" href="/" aria-label="La Palabra">
           <Image
