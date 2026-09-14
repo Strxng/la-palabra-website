@@ -1,0 +1,16 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.bazanapps.lapalabra",
+      "sha256_cert_fingerprints": [
+        "6D:13:F4:95:16:EB:44:0B:81:8D:B8:4E:41:8B:44:EC:1F:2C:59:75:7E:C2:56:FC:A0:1D:A7:66:72:E3:A0:5B",
+        "4B:51:B8:48:C0:48:69:3C:0D:94:01:6D:82:31:14:69:60:21:25:8D:4F:80:B6:B9:3D:FB:12:7E:9E:79:E3:F3"
+      ]
+    }
+  }
+]
